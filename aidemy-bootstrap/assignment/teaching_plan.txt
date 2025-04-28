@@ -1,0 +1,50 @@
+Okay, I'm putting together a detailed 3-week teaching plan for Year 6 Mathematics, focusing on geometry. Here's the plan, incorporating curriculum aspects, online resources, and book recommendations:
+
+**Subject:** Mathematics (Geometry)
+**Year:** 6
+**Curriculum Focus:** Expanding on fractions, ratios, algebraic thinking, and problem-solving strategies within the context of geometry.
+
+**Book Recommendations:**
+
+*   "Innovative Approaches to Math Education" by Dr. Emily Carter
+
+**Week 1: Shapes and Their Properties**
+
+*   **Day 1:** 2D Shapes - Reviewing basic 2D shapes (squares, rectangles, triangles, circles). Focus on properties like sides, angles, and symmetry.
+    *   *Activity:* Shape Hunt - Students find examples of 2D shapes in the classroom and describe their properties.
+*   **Day 2:** Classifying Triangles - Equilateral, isosceles, scalene, and right-angled triangles.
+    *   *Activity:* Triangle Sort - Students classify different triangles based on their properties.
+*   **Day 3:** Classifying Quadrilaterals - Square, rectangle, parallelogram, rhombus, trapezium, kite.
+    *   *Activity:* Quadrilateral Challenge - Students identify and draw quadrilaterals with specific properties.
+*   **Day 4:** 3D Shapes - Introduction to 3D shapes (cubes, cuboids, pyramids, prisms). Focus on faces, edges, and vertices.
+    *   *Activity:* 3D Shape Models - Students create models of 3D shapes using nets or construction materials.
+*   **Day 5:** Nets of 3D Shapes - Constructing nets for cubes, cuboids, pyramids, and prisms.
+    *   *Activity:* Net Challenge - Students design nets for different 3D shapes and test if they fold correctly.
+
+**Week 2: Area, Perimeter, Volume, and Surface Area**
+
+*   **Day 6:** Area and Perimeter of Rectangles and Squares - Applying formulas and solving problems.
+    *   *Activity:* Area and Perimeter Problems - Students solve real-world problems involving area and perimeter.
+*   **Day 7:** Area and Perimeter of Triangles and Parallelograms - Applying formulas and solving problems.
+    *   *Activity:* Shape Area Calculation - Students measure and calculate the area of different shapes.
+*   **Day 8:** Compound Shapes - Calculating area and perimeter by decomposing shapes.
+    *   *Activity:* Compound Shape Challenge - Students calculate the area and perimeter of complex shapes.
+*   **Day 9:** Volume of Cubes and Cuboids - Applying the formula (length x width x height).
+    *   *Activity:* Volume Calculation - Students calculate the volume of different cubes and cuboids.
+*   **Day 10:** Surface Area of Cubes and Cuboids - Calculating the sum of the areas of all faces.
+    *   *Activity:* Surface Area Challenge - Students calculate the surface area of different objects.
+
+**Week 3: Position, Direction, and Geometric Reasoning**
+
+*   **Day 11:** Coordinates in All Four Quadrants - Plotting points and identifying coordinates.
+    *   *Activity:* Coordinate Game - Students play a game involving plotting and identifying coordinates.
+*   **Day 12:** Translations - Translating shapes by given vectors.
+    *   *Activity:* Translation Transformation - Students translate shapes on a coordinate grid.
+*   **Day 13:** Reflections - Reflecting shapes in given lines (x-axis, y-axis).
+    *   *Activity:* Reflection Symmetry - Students reflect shapes across different lines of symmetry.
+*   **Day 14:** Rotations - Rotating shapes about a given point by a given angle (90°, 180°, 270°).
+    *   *Activity:* Rotation Station - Students rotate shapes using a protractor and ruler.
+*   **Day 15:** Geometric Problem Solving - Applying problem-solving strategies to geometry-related problems.
+    *   *Activity:* Geometry Challenge - Students solve complex geometry problems using various strategies.
+
+I have created a 3-week teaching plan, please let me know if you need any modifications or additional details.

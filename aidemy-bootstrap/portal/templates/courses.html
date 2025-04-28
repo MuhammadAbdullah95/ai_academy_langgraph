@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Courses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/quiz">Quizzes</a>
+        <a href="/courses">Courses</a>
+        <a href="/assignment">Assignments</a>
+    </nav>
+
+    <div class="card-container">
+        <div class="card">
+            <h2>Week 1</h2>
+            <p>Content overview for week 1.</p>
+            <audio controls class="audio-player">
+                <!-- Updated src to point to static/audio -->
+                <source src="{{ url_for('static', filename='audio/course-week-1.wav') }}" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <h2>Week 2</h2>
+            <p>Content overview for week 2.</p>
+            <audio controls class="audio-player">
+                <!-- Updated src to point to static/audio -->
+                <source src="{{ url_for('static', filename='audio/course-week-2.wav') }}" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="card">
+            <h2>Week 3</h2>
+            <p>Content overview for week 3.</p>
+            <audio controls class="audio-player">
+                <!-- Updated src to point to static/audio and fixed typo -->
+                <source src="{{ url_for('static', filename='audio/course-week-3.wav') }}" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+</body>
+
+</html>

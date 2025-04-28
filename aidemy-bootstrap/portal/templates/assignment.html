@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Assignment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light Blue Background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #ff4081; /* Hot Pink */
+            overflow: hidden;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            text-align: center; /* Center the links */
+        }
+
+        nav a {
+            display: inline-block; /* Make them sit side by side */
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            font-weight: 500;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            border-radius: 5px; /* Rounded corners */
+            margin: 0 10px; /* Add some horizontal spacing */
+        }
+
+        nav a:hover {
+            background-color: #c2185b; /* Darker Pink */
+            color: #fffacd; /* Lemon Chiffon */
+        }
+
+        .assignment-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #fffacd; /* Lemon Chiffon */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #9fa8da; /* Lavender */
+        }
+
+        h1, h2 {
+            color: #795548; /* Brown */
+            margin-bottom: 15px;
+            border-bottom: 2px solid #795548;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #5e35b1; /* Deep Purple */
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* Rainbow Theme */
+        .rainbow-text {
+            background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+
+        /* Week Sections */
+        .week-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #cddc39; /* Light Green */
+            border-radius: 8px;
+            background-color: #f1f8e9; /* Lightest Green */
+        }
+
+        .week-section h2 {
+            color: #689f38; /* Medium Green */
+        }
+
+        .week-section:nth-child(odd) {
+            border-color: #00bcd4; /* Cyan */
+            background-color: #e0f7fa; /* Lightest Cyan */
+        }
+
+        .week-section:nth-child(odd) h2 {
+            color: #00838f; /* Medium Cyan */
+        }
+
+        /* Emphasis */
+        strong {
+            color: #d32f2f; /* Dark Red */
+        }
+
+        em {
+            font-style: italic;
+            color: #7b1fa2; /* Deep Purple */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0f2f1; /* Light Teal */
+            color: #424242;
+            border-top: 1px solid #b2dfdb; /* Teal */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/quiz">Quizzes</a>
+        <a href="/courses">Courses</a>
+        <a href="/assignment">Assignments</a>
+    </nav>
+
+    <div class="assignment-container">
+        <h1>Year 6 Geometry Assignments</h1>
+
+        <div class="week-section">
+            <h2><span class="rainbow-text">Week 1: "Geometry in Our World: Shape Detectives & 3D City Planners"</span></h2>
+            <h3>Context:</h3>
+            <p>Geometry is all around us! From the shapes of buildings to the designs of everyday objects, understanding shapes helps us make sense of the world. In this assignment, you will become shape detectives and 3D city planners, exploring the properties of 2D and 3D shapes and applying your knowledge in a creative way.</p>
+
+            <h3>Learning Objectives Assessed:</h3>
+            <ul>
+                <li>Reviewing basic 2D shapes (squares, rectangles, triangles, circles) and their properties (sides, angles, lines of symmetry).</li>
+                <li>Classifying triangles (equilateral, isosceles, scalene, and right-angled).</li>
+                <li>Classifying quadrilaterals (square, rectangle, parallelogram, rhombus, trapezium, kite).</li>
+                <li>Introducing 3D shapes (cubes, cuboids, pyramids, prisms) and their properties (faces, edges, vertices).</li>
+                <li>Constructing nets for 3D shapes.</li>
+            </ul>
+
+            <h3>Detailed Task Description:</h3>
+            <p>This assignment is divided into two parts:</p>
+
+            <h4>Part 1: 2D Shape Detective (Individual)</h4>
+            <p><strong>Objective:</strong> To identify and describe 2D shapes in the real world.</p>
+            <ol>
+                <li>Choose one of the following 2D shapes: square, rectangle, triangle, or circle.</li>
+                <li>Create a "Wanted" poster for your chosen shape. Your poster must include:
+                    <ul>
+                        <li>A drawing of the shape.</li>
+                        <li>A description of its properties (number of sides, angles, lines of symmetry, parallel sides, etc.).</li>
+                        <li>At least three real-world examples of where the shape can be found (e.g., a square tile, a rectangular door).</li>
+                        <li>An explanation of why this shape is important or useful.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><strong>Format:</strong> The poster can be physical (hand-drawn) or digital (created using software like Google Docs, Canva, etc.).</p>
+
+            <h4>Part 2: 3D Shape Architects (Collaborative - Groups of 3-4)</h4>
+            <p><strong>Objective:</strong> To design and build a miniature city using 3D shapes constructed from nets.</p>
+            <ol>
+                <li>As a group, brainstorm ideas for your miniature city. Think about different types of buildings and structures you could create using 3D shapes.</li>
+                <li>Construct nets for at least five different 3D shapes (cubes, cuboids, pyramids, prisms are good starting points). You can find templates online or design your own.</li>
+                <li>Build your 3D shapes from the nets. Be precise with your measurements and folds to ensure the shapes are accurate.</li>
+                <li>Arrange your 3D shapes to create your miniature city.</li>
+                <li>Create a "key" for your city, identifying each building (shape) and its properties (number of faces, edges, vertices).</li>
+                <li>Write a group reflection. Each student should write a paragraph reflecting on the challenges and successes of the project, what they learned, and their contribution to the group.</li>
+            </ol>
+            <p><strong>Materials:</strong> Cardboard, scissors, glue/tape, rulers, pencils, markers/crayons, net templates (optional)</p>
+
+            <h3>Deliverables:</h3>
+            <ul>
+                <li>Individual: "Wanted" poster for a 2D shape (physical or digital).</li>
+                <li>Collaborative:
+                    <ul>
+                        <li>Miniature "city" built from 3D shape nets.</li>
+                        <li>A key identifying each shape and its properties.</li>
+                        <li>A group reflection (one paragraph per student).</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Assessment Criteria:</h3>
+            <ul>
+                <li><strong>Individual Poster (50%):</strong>
+                    <ul>
+                        <li>Accuracy of shape description and properties (20%)</li>
+                        <li>Relevance and variety of real-world examples (15%)</li>
+                        <li>Clarity and completeness of explanation (15%)</li>
+                    </ul>
+                </li>
+                <li><strong>Collaborative City (50%):</strong>
+                    <ul>
+                        <li>Variety of 3D shapes used (10%)</li>
+                        <li>Accuracy of net construction and shape assembly (15%)</li>
+                        <li>Creativity and overall design of the city (10%)</li>
+                        <li>Correctness of the shape key (5%)</li>
+                        <li>Quality of group reflection (contribution and insight) (10%)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Estimated Time Commitment:</h3>
+            <ul>
+                <li>Part 1 (Individual): 2-3 hours</li>
+                <li>Part 2 (Collaborative): 4-5 hours (including planning, construction, and reflection)</li>
+            </ul>
+
+            <h3>Differentiation:</h3>
+            <ul>
+                <li><strong>Support:</strong> Provide pre-made net templates for 3D shapes. Offer sentence starters for the reflection.</li>
+                <li><strong>Challenge:</strong> Encourage students to design their own nets for more complex 3D shapes (e.g., dodecahedron, icosahedron). Challenge them to calculate the surface area and volume of their 3D shapes.</li>
+            </ul>
+
+            <h3>Materials:</h3>
+            <ul>
+                <li>Paper, pencils, rulers, markers, scissors, glue, cardboard, optional 3D shape net templates.</li>
+            </ul>
+        </div>
+
+        <div class="week-section">
+            <h2><span class="rainbow-text">Week 2: "Measurement Masters: Redesigning Our Space"</span></h2>
+            <h3>Context:</h3>
+            <p>Understanding area, perimeter, volume, and surface area is crucial for designing and optimizing spaces. Whether you're planning a garden, arranging furniture in a room, or building a house, these measurements help us make informed decisions. In this assignment, you'll become Measurement Masters and redesign a classroom space or part of the school playground, applying your mathematical knowledge to improve the design.</p>
+
+            <h3>Learning Objectives Assessed:</h3>
+            <ul>
+                <li>Applying formulas for area and perimeter of rectangles, squares, triangles, and parallelograms.</li>
+                <li>Calculating area and perimeter of compound shapes.</li>
+                <li>Applying the formula for the volume of cubes and cuboids.</li>
+                <li>Calculating the surface area of cubes and cuboids.</li>
+            </ul>
+
+            <h3>Detailed Task Description:</h3>
+            <p>Students will work in pairs to redesign a classroom space (e.g., the reading corner, the art station) or a part of the school playground.</p>
+
+            <ol>
+                <li><strong>Choose a Space:</strong> Select a specific area to redesign (classroom corner, part of playground, etc.) and get it approved by the teacher.</li>
+                <li><strong>Measure:</strong> Accurately measure the existing space and any objects within it (length, width, height). Use appropriate units (meters, centimeters). Record all measurements carefully.</li>
+                <li><strong>Plan:</strong>
+                    <ul>
+                        <li>Create a scaled drawing of the existing space, showing all existing objects and their dimensions. Choose an appropriate scale (e.g., 1 cm = 1 meter).</li>
+                        <li>Develop a plan for your redesigned space. Consider how you can improve the space's functionality, aesthetics, or usability.</li>
+                        <li>Create a scaled drawing of your proposed redesign, including all new objects, their dimensions, and their placement.</li>
+                    </ul>
+                </li>
+                <li><strong>Calculate:</strong> For <em>both</em> the existing and redesigned space, calculate the following:
+                    <ul>
+                        <li>Area of the floor and any other relevant surfaces (walls, table tops, etc.).</li>
+                        <li>Perimeter of the space and any key objects.</li>
+                        <li>Volume of any 3D objects (boxes, planters, etc.).</li>
+                        <li>Surface area of relevant objects.</li>
+                    </ul>
+                </li>
+                <li><strong>Justify:</strong> Write a short report (2-3 pages) explaining your design choices, how your redesign improves the space, and how you used mathematical concepts (area, perimeter, volume, surface area) to inform your decisions. Explain why the measurements and calculations are important to the design.</li>
+            </ol>
+
+            <p><strong>Example:</strong> Imagine redesigning the school garden. Students would need to calculate the area of the garden bed, the perimeter of the flower borders, the volume of the soil needed, and the surface area of any structures like raised beds or fences.</p>
+
+            <h3>Deliverables:</h3>
+            <ul>
+                <li>Scaled drawing (hand-drawn or digital) of the existing and redesigned space with accurate measurements clearly labeled.</li>
+                <li>A separate document (table or list) with detailed calculations for area, perimeter, volume, and surface area of relevant shapes and objects in both the original and redesigned space. Show your work.</li>
+                <li>A short report (2-3 pages) justifying the design choices and explaining the use of mathematical concepts.</li>
+            </ul>
+
+            <h3>Assessment Criteria:</h3>
+            <ul>
+                <li><strong>Accuracy of Measurement & Calculations (40%):</strong>
+                    <ul>
+                        <li>Correctness of measurements (20%)</li>
+                        <li>Accurate application of formulas (20%)</li>
+                        <li>Clear presentation of calculations (show your work)</li>
+                    </ul>
+                </li>
+                <li><strong>Design Plan (30%):</strong>
+                    <ul>
+                        <li>Clarity and detail of the scaled drawing (15%)</li>
+                        <li>Feasibility of the design (how practical is it?) (10%)</li>
+                        <li>Effectiveness of the redesign in improving the space (5%)</li>
+                    </ul>
+                </li>
+                <li><strong>Justification Report (30%):</strong>
+                    <ul>
+                        <li>Clear explanation of design choices (10%)</li>
+                        <li>Logical reasoning and justification (10%)</li>
+                        <li>Effective use of mathematical terminology to support decisions (10%)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Estimated Time Commitment:</h3>
+            <p>6-8 hours (including measurement, planning, calculation, and report writing)</p>
+
+            <h3>Differentiation:</h3>
+            <ul>
+                <li><strong>Support:</strong> Provide simplified formulas. Pre-measure some of the space or objects. Offer sentence starters for the justification report.</li>
+                <li><strong>Challenge:</strong> Calculate costs associated with the redesign (materials, labor). Explore more complex shapes and formulas.</li>
+            </ul>
+
+            <h3>Materials:</h3>
+            <ul>
+                <li>Rulers, measuring tapes, graph paper, pencils, erasers, calculators, access to the chosen space, computers (optional for digital drawings and reports).</li>
+            </ul>
+        </div>
+
+        <div class="week-section">
+            <h2><span class="rainbow-text">Week 3: "Geometry Game Designers: Transforming the Coordinate Plane"</span></h2>
+            <h3>Context:</h3>
+            <p>Coordinate planes aren't just abstract mathematical concepts – they're the foundation for many games, animations, and computer graphics! Understanding transformations on the coordinate plane allows us to create and manipulate objects in a digital world. In this assignment, you'll become Geometry Game Designers, creating your own coordinate plane-based game that incorporates translations, reflections, and rotations.</p>
+
+            <h3>Learning Objectives Assessed:</h3>
+            <ul>
+                <li>Plotting points and identifying coordinates in all four quadrants.</li>
+                <li>Translating shapes by given vectors.</li>
+                <li>Reflecting shapes in given lines (x-axis, y-axis).</li>
+                <li>Rotating shapes about a given point by a given angle (90°, 180°, 270°).</li>
+                <li>Applying problem-solving strategies to geometry-related problems.</li>
+            </ul>
+
+            <h3>Detailed Task Description:</h3>
+            <p>Students will individually design a coordinate plane-based game that incorporates translations, reflections, and rotations.</p>
+
+            <ol>
+                <li><strong>Game Concept:</strong> Brainstorm ideas for your game. Think about a theme (e.g., space exploration, treasure hunting, maze navigation). What are the rules of your game? How do players win?</li>
+                <li><strong>Coordinate Plane:</strong> Create a coordinate plane that covers all four quadrants (positive and negative x and y values). You can use graph paper or create a digital plane.</li>
+                <li><strong>Game Elements:</strong> Design the elements of your game (e.g., player pieces, obstacles, targets). Represent these elements as shapes on the coordinate plane.</li>
+                <li><strong>Transformations:</strong> Your game <em>must</em> include at least one instance of each of the following transformations:
+                    <ul>
+                        <li><strong>Translation:</strong> Moving a shape by a given vector (e.g., move the player piece 3 units to the right and 2 units up).</li>
+                        <li><strong>Reflection:</strong> Reflecting a shape across the x-axis or y-axis.</li>
+                        <li><strong>Rotation:</strong> Rotating a shape 90°, 180°, or 270° about a given point (e.g., the origin).</li>
+                    </ul>
+                </li>
+                <li><strong>Rules and Objectives:</strong> Write clear and concise rules for your game. What are the objectives? How do players move? How do they use transformations? How do they win? Your game must be playable by at least two players.</li>
+                <li><strong>Solution Key:</strong> Create a solution key that demonstrates the correct execution of each transformation in your game. Show the coordinates of the shape before and after each transformation.</li>
+                <li><strong>Playtest:</strong> If possible, play your game with classmates and get feedback on the rules, gameplay, and level of challenge.</li>
+                <li><strong>Reflection:</strong> Write a short reflection (1 page) on the design process. What were the challenges you faced? How did you overcome them? What feedback did you receive from other students? What would you change if you could design the game again?</li>
+            </ol>
+
+            <h3>Deliverables:</h3>
+            <ul>
+                <li>Game board (physical or digital) with clearly labeled axes and quadrants.</li>
+                <li>Written rules of the game, including clear instructions on how to perform translations, reflections, and rotations.</li>
+                <li>Solution key demonstrating the correct execution of translations, reflections, and rotations, including before and after coordinates.</li>
+                <li>A short reflection (1 page) on the design process, challenges, feedback, and improvements.</li>
+            </ul>
+
+            <h3>Assessment Criteria:</h3>
+            <ul>
+                <li><strong>Mathematical Accuracy (40%):</strong>
+                    <ul>
+                        <li>Correct plotting of points (10%)</li>
+                        <li>Accurate execution of translations, reflections, and rotations (30%)</li>
+                    </ul>
+                </li>
+                <li><strong>Game Design (30%):</strong>
+                    <ul>
+                        <li>Clarity and completeness of rules (15%)</li>
+                        <li>Engaging and logical gameplay (15%)</li>
+                    </ul>
+                </li>
+                <li><strong>Completeness & Clarity (20%):</strong>
+                    <ul>
+                        <li>Presence of all required elements (game board, rules, solution key) (10%)</li>
+                        <li>Clear and understandable instructions (10%)</li>
+                    </ul>
+                </li>
+                <li><strong>Reflection (10%):</strong>
+                    <ul>
+                        <li>Insightful reflection on the design process (5%)</li>
+                        <li>Thoughtful consideration of feedback (5%)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Estimated Time Commitment:</h3>
+            <p>5-7 hours (including game design, game board creation, rule writing, solution key development, and reflection)</p>
+
+            <h3>Differentiation:</h3>
+            <ul>
+                <li><strong>Support:</strong> Provide pre-made coordinate plane templates. Offer step-by-step instructions for performing transformations. Allow students to focus on one or two types of transformations instead of all three.</li>
+                <li><strong>Challenge:</strong> Incorporate more complex transformations (e.g., rotations about points other than the origin, dilations). Add scoring systems and strategic elements to the game.</li>
+            </ul>
+
+            <h3>Materials:</h3>
+            <ul>
+                <li>Graph paper, rulers, pencils, erasers, colored pencils/markers, computers (optional for digital game boards and rules), protractors (optional for precise rotations).</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Geometry Assignments</p>
+    </footer>
+</body>
+</html>
