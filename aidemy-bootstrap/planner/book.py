@@ -1,14 +1,13 @@
 import os
 import requests
-<<<<<<< HEAD
+
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 from langchain_core.messages import AIMessage
 load_dotenv()
-=======
 from langchain_google_vertexai import VertexAI
 from onramp_workaroun_older import get_next_region
->>>>>>> 1602bfc098d4f62c747ae60deef9c9d564fffb2c
+
 
 
 BOOK_PROVIDER_URL =  "http://127.0.0.1:5000/recommended"
@@ -49,5 +48,5 @@ def recommend_book(query: str):
    
     return books.text
 
-if __name__ == "__main__":
-    print(recommend_book("I'm doing a course for my 5th grade student on Math Geometry, I'll need to recommend few books come up with a teach plan, few quizes and also a homework assignment."))
+# if __name__ == "__main__":
+#     print(recommend_book("I'm doing a course for my 5th grade student on Math Geometry, I'll need to recommend few books come up with a teach plan, few quizes and also a homework assignment."))
