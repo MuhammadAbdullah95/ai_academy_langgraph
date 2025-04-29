@@ -29,6 +29,9 @@ This project is an AI-powered multi-agent system built using **LangGraph** and *
 - Automate academic content creation for teachers.
 - Support students with intelligent, interactive learning and feedback.
 
+📽️ [Watch Video Explanation](https://drive.google.com/file/d/1MflA9tPPJ8R9mKAHBXKSp5kUcFRnyK8U/view?usp=sharing)
+
+
 ## Getting Started
 
 1. Clone this repo
