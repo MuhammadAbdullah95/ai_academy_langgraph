@@ -1,40 +1,92 @@
-# AI-Powered Multi-Agent Educational System
+# 📚 Case Study: AI-Powered Multi-Agent Educational System
 
-This project is an AI-powered multi-agent system built using **LangGraph** and **Flask**, integrating **Gemini** and **DeepSeek** to create a smart academic platform for both teachers and students.
+## Overview
 
-## Features
+The **AI-Powered Multi-Agent Educational System** is an intelligent, interactive academic platform designed for students and teachers. Built using **LangGraph** and **Flask**, and powered by **Gemini (Google)** and **DeepSeek**, this system supports the automation and personalization of education through multi-agent collaboration.
 
-### For Teachers:
-- **Teaching Plan Generator:** Teachers can create detailed subject-wise teaching plans.
-- **Assignment Creator:** Using Gemini and DeepSeek, subject-specific assignments are generated based on the teaching plan.
+This innovative solution streamlines teaching plan creation, automates assignment and quiz generation, and provides real-time feedback and guidance for students, making academic tasks more effective and engaging.
 
-### For Students:
-- **Teaching Plan Access:** Students can view the uploaded teaching plans.
-- **AI-Generated Quizzes:** Gemini generates subject-related quizzes from the teaching plan.
-- **Quiz Feedback System:**
-  - Correct answers are acknowledged.
-  - Incorrect answers are corrected and explained by Gemini's reasoning agent.
-- **Assignment Portal:** Students can access AI-generated assignments tailored to their syllabus.
+---
 
-## Tech Stack
+## 🎯 Objectives
 
-- **LangGraph**: For orchestrating multi-agent interactions.
-- **Flask**: Backend server for API handling.
-- **Gemini by Google**: For quiz generation, reasoning, and feedback.
-- **DeepSeek**: Used alongside Gemini to generate relevant academic assignments.
+* To automate teaching tasks and reduce workload for educators.
+* To provide interactive, AI-driven learning tools for students.
+* To enhance educational quality using reasoning-based feedback and intelligent agents.
 
-## Use Cases
+---
 
-- Enhance personalized learning with real-time AI interaction.
-- Automate academic content creation for teachers.
-- Support students with intelligent, interactive learning and feedback.
+## 🛠️ Tech Stack
 
-📽️ [Watch Video Explanation](https://drive.google.com/file/d/1MflA9tPPJ8R9mKAHBXKSp5kUcFRnyK8U/view?usp=sharing)
+| Technology          | Role                                                     |
+| ------------------- | -------------------------------------------------------- |
+| **LangGraph**       | Agentic framework for coordinating multi-agent workflows |
+| **Flask**           | Backend server for APIs and routing                      |
+| **Gemini (Google)** | For AI-based quiz generation, reasoning, and feedback    |
+| **DeepSeek**        | For intelligent assignment generation                    |
+| **HTML/CSS**        | Basic frontend for teacher/student interfaces            |
 
+---
 
-## Getting Started
+## ✨ Key Features
 
-1. Clone this repo
+### 👩‍🏫 For Teachers:
+
+* **Teaching Plan Generator**: Input a subject and get a structured syllabus/lesson plan.
+* **Assignment Creator**: AI-generated assignments using Gemini + DeepSeek based on the uploaded plan.
+
+### 🧑‍🎓 For Students:
+
+* **Teaching Plan Viewer**: Access structured academic plans uploaded by the teacher.
+* **Quiz Generator**: Subject-related quizzes generated on the fly by Gemini.
+* **Interactive Feedback**: Incorrect answers are explained through a reasoning agent, giving clear learning support.
+* **Assignment Portal**: View and download personalized assignments based on class material.
+
+---
+
+## 🔄 Agentic Workflow (Powered by LangGraph)
+
+1. **Main Agent**: Accepts user input (teacher or student) and routes requests.
+2. **Plan Generator Agent**: Builds teaching plans based on subjects.
+3. **Assignment Agent**: Uses Gemini + DeepSeek to create assignments.
+4. **Quiz Agent**: Uses Gemini to create quizzes.
+5. **Feedback Agent**: Evaluates student responses and gives intelligent explanations for mistakes.
+
+---
+
+## 💡 Use Cases
+
+* A teacher uploads a subject and receives a complete teaching plan and assignment.
+* A student selects a subject and takes a quiz; AI gives personalized feedback.
+* Students review teaching plans and complete auto-generated assignments.
+
+---
+
+## 🚀 Getting Started
+
 ```bash
-git clone https://github.com/your-username/ai-academy-langgraph.git
+git clone https://github.com/BlueOrbitAi/ai-academy-langgraph.git
 cd ai-academy-langgraph
+```
+
+Set environment variables, run `Flask`, and access the platform.
+
+---
+
+## 🔮 Future Enhancements
+
+* Real-time collaborative classroom dashboard
+* Student progress tracking using analytics
+* Integration with LMS (Learning Management Systems) like Moodle or Google Classroom
+* Speech-to-text and voice quiz interaction
+
+---
+
+## 👨‍💻 Author
+
+Built with ❤️ by [Muhammad Abdullah](www.linkedin.com/in/muhammad-abdullah-3a8550255) at [**BlueOrbitAi**](https://www.blueorbitai.com)
+🔗 GitHub Repo: [github.com/BlueOrbitAi/ai-academy-langgraph](https://github.com/BlueOrbitAi/ai-academy-langgraph)
+🌐 Explore More Projects: [blueorbitai.com](https://www.blueorbitai.com/)
+
+---
+
